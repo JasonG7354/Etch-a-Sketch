@@ -10,7 +10,7 @@ createGrid(row);
 
 button.addEventListener("click", () => {
     let newGridCount = prompt("Enter the area amount of new rows:");
-    if (isNaN(newGridCount)) {
+    if (isNaN(newGridCount) || newGridCount > 100) {
         newGridCount = prompt("Invalid input. Please enter a number:");
     } else {
         const allDivs = document.querySelectorAll("div");
